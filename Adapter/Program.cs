@@ -1,6 +1,7 @@
 ﻿using Adapter;
 
-IAsyncLogSaver adapter = new SqlServerAsyncLogSaverAdapter();
+IAsyncLogSaver sqlServerAdapter = new SqlServerAsyncLogSaverAdapter();
+IAsyncLogSaver postgresqlLogSaver = new PostgresqlLogSaver();
 
 var simpleLogEntry = new SimpleLogEntry
 {
@@ -8,7 +9,8 @@ var simpleLogEntry = new SimpleLogEntry
     Message = "Log message",
     Severity = 1,
 };
-await adapter.SaveAsync(simpleLogEntry);
+await sqlServerAdapter.SaveAsync(simpleLogEntry);
+await postgresqlLogSaver.SaveAsync(simpleLogEntry);
 
 var exceptionLogEntry = new ExceptionLogEntry
 {
@@ -16,4 +18,5 @@ var exceptionLogEntry = new ExceptionLogEntry
     Exception = new Exception("Test exception"),
     Message = "Exception message",
 };
-await adapter.SaveAsync(exceptionLogEntry);
+await sqlServerAdapter.SaveAsync(exceptionLogEntry);
+await postgresqlLogSaver.SaveAsync(exceptionLogEntry);
