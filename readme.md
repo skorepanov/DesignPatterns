@@ -19,7 +19,7 @@
 ### Поведенческие
 1. [Стратегия - Strategy](./Strategy/Strategy.md)
 2. [Состояние - State](./State/State.md)
-3. Шаблонный метод
+3. [Шаблонный метод - Template method](./TemplateMethod/TemplateMethod.md)
 4. Цепочка обязанностей
 5. Команда
 6. Интерпретатор
