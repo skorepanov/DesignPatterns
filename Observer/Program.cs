@@ -1,5 +1,6 @@
 ﻿#region Пример 1 - Классическая реализация
 using Observer.ClassicalImplementation;
+
 var observer1 = new Observer1();
 var subject = new Subject();
 subject.RegisterObserver(observer1);
@@ -17,15 +18,17 @@ subject.MakeBusinessLogic();
 
 #region Пример 2 - Реализация с событиями (events)
 // using Observer.Events;
+//
 // var subject = new Subject();
 // var observer1 = new Observer1(subject);
 // subject.MakeBusinessLogic();
 // Console.WriteLine();
 //
-// var observer2 = new Observer2(subject);
-// subject.MakeBusinessLogic();
-// Console.WriteLine();
+// using (var observer2 = new Observer2(subject))
+// {
+//     subject.MakeBusinessLogic();
+//     Console.WriteLine();
+// }
 //
-// observer1.Dispose();
 // subject.MakeBusinessLogic();
 #endregion
