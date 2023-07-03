@@ -21,7 +21,7 @@
 2. [Состояние - State](./State/State.md)
 3. [Шаблонный метод - Template method](./TemplateMethod/TemplateMethod.md)
 4. [Наблюдатель (Слушатель, Издатель-подписчик) - Observer](./Observer/Observer.md)
-5. Посредник
+5. [Посредник - Mediator (Controller)](./Mediator/Mediator.md)
 6. Посетитель
 7. Цепочка обязанностей
 8. Команда
