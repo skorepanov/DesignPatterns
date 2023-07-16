@@ -1,5 +1,6 @@
 using Memento_Simple;
 //using Memento_NestedClass;
+//using Memento_Serialization;
 
 var document = new Document();
 var history = new EditorHistory(document);
