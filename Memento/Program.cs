@@ -1,18 +1,24 @@
-﻿using Memento_Simple;
+using Memento_Simple;
+//using Memento_NestedClass;
 
 var document = new Document();
-var history = new EditorHistory();
+var history = new EditorHistory(document);
 
-document.AddBlock("Hello, world!");
-document.SetStyle(2);
+history.ChangeState(style: 2, text: "Hello, world!");
 document.Print();
-var stateToSave = document.SaveState();
-history.Push(stateToSave);
+Console.WriteLine();
 
-document.AddBlock("Goodbye, world!");
-document.SetStyle(3);
+history.ChangeState(style: 3, text: "Goodbye, world!");
 document.Print();
+Console.WriteLine();
 
-var stateToRestore = history.Pop();
-document.RestoreState(stateToRestore);
+history.ChangeState(style: 4, text: "World!");
+document.Print();
+Console.WriteLine();
+
+history.Undo(); // 4 -> 3
+document.Print();
+Console.WriteLine();
+
+history.Undo(); // 3 -> 2
 document.Print();
