@@ -24,7 +24,7 @@
 5. [Посредник - Mediator (Controller)](./Mediator/Mediator.md)
 6. Посетитель
 7. Цепочка обязанностей
-8. Команда
+8. [Команда (Действие, Транзакция) - Command (Action, Transaction)](./Command/Command.md)
 9. [Снимок (Хранитель) - Memento](./Memento/Memento.md)
 10. [Итератор (Курсор) - Iterator (Cursor)](./Iterator/Iterator.md)
 11. Интерпретатор
