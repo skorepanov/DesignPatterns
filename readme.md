@@ -22,7 +22,7 @@
 3. [Шаблонный метод - Template method](./TemplateMethod/TemplateMethod.md)
 4. [Наблюдатель (Слушатель, Издатель-подписчик) - Observer](./Observer/Observer.md)
 5. [Посредник - Mediator (Controller)](./Mediator/Mediator.md)
-6. Посетитель
+6. [Посетитель - Visitor](./Visitor/Visitor.md)
 7. Цепочка обязанностей
 8. [Команда (Действие, Транзакция) - Command (Action, Transaction)](./Command/Command.md)
 9. [Снимок (Хранитель) - Memento](./Memento/Memento.md)
