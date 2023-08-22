@@ -23,7 +23,7 @@
 4. [Наблюдатель (Слушатель, Издатель-подписчик) - Observer](./Observer/Observer.md)
 5. [Посредник - Mediator (Controller)](./Mediator/Mediator.md)
 6. [Посетитель - Visitor](./Visitor/Visitor.md)
-7. Цепочка обязанностей
+7. [Цепочка обязанностей - Chain of Responsibility (Chain of Command)](./ChainOfResponsibility/ChainOfResponsibility.md)
 8. [Команда (Действие, Транзакция) - Command (Action, Transaction)](./Command/Command.md)
 9. [Снимок (Хранитель) - Memento](./Memento/Memento.md)
 10. [Итератор (Курсор) - Iterator (Cursor)](./Iterator/Iterator.md)
