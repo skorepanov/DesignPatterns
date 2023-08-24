@@ -50,6 +50,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{BF369FAE-8427-4F25-B2C0-840AD21636F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreter", "Interpreter\Interpreter.csproj", "{90D95CB4-E945-4704-B91B-7B88EF928F20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +80,7 @@ Global
 		{5747CFC7-6D93-4E5E-9738-7155E9DFC496} = {CF53DD23-FB03-457E-A9C3-FED8466C5ADC}
 		{84F4126B-DC52-4F91-8766-D3A2ECA76FBD} = {CF53DD23-FB03-457E-A9C3-FED8466C5ADC}
 		{BF369FAE-8427-4F25-B2C0-840AD21636F8} = {CF53DD23-FB03-457E-A9C3-FED8466C5ADC}
+		{90D95CB4-E945-4704-B91B-7B88EF928F20} = {CF53DD23-FB03-457E-A9C3-FED8466C5ADC}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6543D0C4-6237-4C3B-A7A6-FF7820C0EC9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -168,5 +171,9 @@ Global
 		{BF369FAE-8427-4F25-B2C0-840AD21636F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF369FAE-8427-4F25-B2C0-840AD21636F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF369FAE-8427-4F25-B2C0-840AD21636F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D95CB4-E945-4704-B91B-7B88EF928F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D95CB4-E945-4704-B91B-7B88EF928F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D95CB4-E945-4704-B91B-7B88EF928F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D95CB4-E945-4704-B91B-7B88EF928F20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

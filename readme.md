@@ -1,4 +1,4 @@
-﻿# Паттерны проектирования
+﻿# Паттерны проектирования - Design patterns
 
 ### Порождающие - Creational
 1. [Фабричный метод - Factory method](./FactoryMethod/FactoryMethod.md)
@@ -27,4 +27,4 @@
 8. [Команда (Действие, Транзакция) - Command (Action, Transaction)](./Command/Command.md)
 9. [Снимок (Хранитель) - Memento](./Memento/Memento.md)
 10. [Итератор (Курсор) - Iterator (Cursor)](./Iterator/Iterator.md)
-11. Интерпретатор
+11. [Интерпретатор - Interpreter](./Interpreter/Interpreter.md)
