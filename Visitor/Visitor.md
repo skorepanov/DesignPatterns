@@ -72,3 +72,5 @@
   * `SymbolVisitor<TResult>` - для работы с символами.
   * и др.
 * `DbExpressionVisitor` используется Entity Framework для SQL-выражений.
+
+### Отношения с другими паттернами

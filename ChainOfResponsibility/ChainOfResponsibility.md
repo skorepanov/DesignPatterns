@@ -64,3 +64,6 @@
 * Событие `Closing` в Windows Forms с возможностью отмены закрытия формы путём установки свойства `Cancel` аргумента `CancelEventArgs` в `true`.
 * Событие `TaskScheduler.UnobservedException`, обработчик которого может уведомить планировщик, что необработанное исключение задачи не является критическим, путём вызова метода `UnobservedTaskExceptionEventArgs.SetObserved`.
   * Для аналогичных целей используются события `Contract.ContractFailed` и `Application.DispatcherUnhandledException`.
+
+### Отношения с другими паттернами
+
