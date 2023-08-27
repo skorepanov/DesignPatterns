@@ -34,7 +34,10 @@
 
 ### Примеры в .NET
 * `Thread.CurrentThread`.
+* `AppDomain.CurrentDomain`.
+* `TaskScheduler.Default`.
 * `HttpContext.Current`.
+* `Form.ActiveForm`.
 
 ### Singleton VS static class
 | Singleton                                                                | static class                                                               |

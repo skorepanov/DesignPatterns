@@ -41,12 +41,20 @@
 * При появлении нового абстрактного фабричного метода его нужно будет добавить во все реализации фабрик.
 
 ### Примеры использования
-1. `DbProviderFactory` (ADO.NET). Фабричные методы:
-   * `DbConnection? CreateConnection()`
-   * `DbCommand? CreateCommand()`
-   * `DbParameter? CreateParameter()`
-   * и др.
-2. DI-контейнеры.
+* DI-контейнеры.
+
+### Примеры в .NET
+* Класс`DbProviderFactory` из ADO.NET с фабричными методами:
+  * `DbConnection CreateConnection()`
+  * `DbCommand CreateCommand()`
+  * `DbParameter CreateParameter()`.
+* Класс `CodeDomProvider` с фабричными методами:
+  * `ICodeGenerator CreateGenerator()`.
+  * `ICodeCompiler CreateCompiler()`.
+  * `ICodeParser CreateParser()`.
+* Класс `SymmetricAlgorithm` с фабричными методами:
+  * `ICryptoTransform CreateEncryptor()`.
+  * `ICryptoTransform CreateDecryptor()`.
 
 ### Отношения с другими паттернами
 * Абстрактная фабрика может работать совместно с [Мостом](../Bridge/Bridge.md).

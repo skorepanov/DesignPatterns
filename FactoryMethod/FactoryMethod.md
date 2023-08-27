@@ -46,9 +46,14 @@
 3. Когда необходимо кэшировать созданные ранее объекты.
 
 ### Примеры в .NET
-* `File.Create()`.
-* `Color.FromArgb()`.
-* `Activator.CreateInstance()`.
+* Классический фабричный метод:
+  * `Stream.CreateWaitHandle`, `SecurityAttribute.CreatePermission`, `ChannelFactory.CreateChannel`, `XmlNode.CreateNavigator`.
+* Обобщёная статическая фабрика:
+  * `Activator.CreateInstance`, `Array.CreateInstance`, `StringComparer.Create`.
+* Фасадные фабричные методы:
+  * `File.Create`, `File.CreateText`.
+* Именованные конструкторы:
+  * `TimeSpan.FromSeconds` и т.п., `Color.FromArgb`.
 
 ### Отношения с другими паттернами
 * Фабричный метод можно использовать вместе с [Итератором](../Iterator/Iterator.md), чтобы подклассы коллекций могли создавать подходящие им итераторы.
