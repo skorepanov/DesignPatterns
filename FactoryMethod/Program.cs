@@ -1,17 +1,28 @@
 ﻿using FactoryMethod;
 
-#region Factory Method
-Document document1 = new Document();
-DocumentManager documentManager1 = new TxtDocumentManager();
-IDocumentStorage storage = documentManager1.CreateStorage();
-storage.Save(document1);
+#region Factory Mehod
+var documents = new Document[]
+{
+   new Resume(),
+   new Report()
+};
 
-Document document2 = new Document();
-DocumentManager documentManager2 = new DocxDocumentManager();
-documentManager2.Save(document2);
+foreach (var document in documents)
+{
+   Console.WriteLine(document.GetType().Name);
+
+   var pages = document.CreatePages();
+
+   foreach (var page in pages)
+   {
+      Console.WriteLine($"-{page.GetType().Name}");
+   }
+
+   Console.WriteLine();
+}
 #endregion
 
-Console.WriteLine("------------------------");
+Console.WriteLine("-------------------------------------------");
 
 #region Static Factory
 var jsonImporter = ImporterStaticFactory.Create(@"d:\temp\data.json");
