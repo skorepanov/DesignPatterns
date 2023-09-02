@@ -1,14 +1,13 @@
-﻿using Microsoft.Data.SqlClient;
-using Npgsql;
-using System.Data.Common;
-using AbstractFactory;
+﻿using AbstractFactory;
 
-List<LogEntry> logEntries = new List<LogEntry>();
+var logEntries = new List<LogEntry>();
 
-DbProviderFactory sqlFactory = SqlClientFactory.Instance;
-LogSaver sqlLogSaver = new LogSaver(sqlFactory);
-sqlLogSaver.Save(logEntries);
+var postgresqlFactory = new PostgresqlFactory();
+var postgresqlLogSaver = new LogSaver(postgresqlFactory);
+postgresqlLogSaver.Save(logEntries);
 
-DbProviderFactory npgsqlFactory = NpgsqlFactory.Instance;
-LogSaver npgsqlLogSaver = new LogSaver(npgsqlFactory);
-npgsqlLogSaver.Save(logEntries);
+Console.WriteLine();
+
+var msSqlFactory = new MsSqlFactory();
+var msSqlLogSaver = new LogSaver(msSqlFactory);
+msSqlLogSaver.Save(logEntries);
